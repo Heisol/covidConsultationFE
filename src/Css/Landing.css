@@ -4,3 +4,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:focus {
+  border: 2.5px solid turquoise;
+}

@@ -94,6 +94,7 @@ const Landing = () => {
           icon: "warning",
           dangerMode: true,
         });
+        setFetching(true)
         return;
       }
     }

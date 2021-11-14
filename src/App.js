@@ -1,13 +1,8 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // package imports
 
-
 import Landing from "./Pages/Landing";
-import NotFound from './Pages/NotFound'
+import NotFound from "./Pages/NotFound";
 //local imports
 
 function App() {

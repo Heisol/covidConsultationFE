@@ -20,7 +20,7 @@ const Landing = () => {
         {state: null, name:"Diarrhoea", id: 8},
         {state: null, name:"Skin Rash or Discoloration of fingers and toes", id: 9},
         {state: null, name:"Eye Redness or Irritation", id: 10},
-        {state: null, name:"Difficulty Breather or Shortness of Breath", id: 11},
+        {state: null, name:"Difficulty Breathing or Shortness of Breath", id: 11},
         {state: null, name:"Loss of Speech or Mobility, or Confusion", id: 12},
         {state: null, name:"Chest Pains", id: 13},
     ])
@@ -84,9 +84,16 @@ const Landing = () => {
                 } else {
                     Swal.fire({
                         title: resJson.diagnosis.title,
-                        text: resJson.diagnosis.message,
-                        icon: 'success',
-                        confirmButtonText: 'Cool'
+                        html: `${resJson.diagnosis.message}<br>
+                        Click the link below for see<br>
+                        <a
+                          href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+                          target="_blank"
+                        >
+                        WHO covid19 guidelines and precautions
+                        </a>
+                        `,
+                        confirmButtonText: 'Close'
                     })
                 }
                 setFetching(false)

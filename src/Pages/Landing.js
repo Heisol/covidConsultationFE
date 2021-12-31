@@ -172,7 +172,7 @@ const Landing = () => {
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             {SymptomBool.map((item)=>{
                 return <div key={item.id} style={{padding: 3}} >
-                    <FontAwesomeIcon icon={faCheckCircle} style={{color: item.state===true ? 'red': item.state===false ? 'green': 'black', borderBottom: Step===item.id? '1px solid black': '' }} />
+                    <FontAwesomeIcon icon={faCheckCircle} style={{color: item.state===true ? 'red': item.state===false ? 'green': 'black', border: Step===item.id? '2px solid black': ''}} />
                 </div>
             })}
         </div>
